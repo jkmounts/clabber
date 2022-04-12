@@ -39,7 +39,7 @@ const suitSymbol = computed(() => {
     case 'club':
       return '&#9827;';
     case 'diamond':
-      return '&#9827;';
+      return '&#9830;';
   }
 })
 
