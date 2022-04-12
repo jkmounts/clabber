@@ -5,9 +5,11 @@ import 'normalize.css';
 import HelloWorld from './components/HelloWorld.vue';
 import Card from './components/Card.vue';
 import Scoreboard from './components/Scoreboard.vue';
+import TrumpTracker from './components/TrumpTracker.vue';
 </script>
 
 <template>
+  <TrumpTracker />
   <Scoreboard />
   <Card suit="club" value="5" />
 </template>
