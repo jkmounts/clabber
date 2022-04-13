@@ -4,7 +4,7 @@
       Clabber
     </h1>
     <nav class="links">
-      <p>Info</p>
+      <a @click="$emit('showInfo')">Info</a>
     </nav>
   </div>
 </template>

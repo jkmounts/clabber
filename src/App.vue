@@ -7,11 +7,24 @@ import Card from './components/Card.vue';
 import Scoreboard from './components/Scoreboard.vue';
 import TrumpTracker from './components/TrumpTracker.vue';
 import PageHeader from './components/Header.vue';
+import Info from './components/Info.vue';
+
+import { reactive } from 'vue';
+
+let state = reactive({
+  showInfo: false,
+});
+
+const toggleInfo = function() {
+  state.showInfo = !state.showInfo;
+  console.log(state.showInfo);
+}
 </script>
 
 <template>
-  <PageHeader />
+  <PageHeader @show-info="toggleInfo"/>
   <TrumpTracker />
+  <Info v-if="state.showInfo" @close-info="toggleInfo"/>
   <Scoreboard />
   <Card suit="club" value="5" />
 </template>
