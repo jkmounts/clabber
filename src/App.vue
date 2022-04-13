@@ -6,9 +6,11 @@ import HelloWorld from './components/HelloWorld.vue';
 import Card from './components/Card.vue';
 import Scoreboard from './components/Scoreboard.vue';
 import TrumpTracker from './components/TrumpTracker.vue';
+import PageHeader from './components/Header.vue';
 </script>
 
 <template>
+  <PageHeader />
   <TrumpTracker />
   <Scoreboard />
   <Card suit="club" value="5" />
@@ -21,7 +23,5 @@ import TrumpTracker from './components/TrumpTracker.vue';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  max-width: 98%;
 }
 </style>
